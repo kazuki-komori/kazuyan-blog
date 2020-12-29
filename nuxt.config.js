@@ -12,6 +12,10 @@ export default {
     ]
   },
 
+  router: {
+    base: '/kazuyan-blog/'
+  },
+
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
   ],
