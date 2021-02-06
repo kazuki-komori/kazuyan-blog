@@ -1,5 +1,5 @@
 <template>
-  <div class='p-4 border-b-2 border-green'>
+  <div class='p-4 border-b-2 border-green text-green'>
     <section>
       <p>{{timer}}</p>
     </section>
@@ -10,12 +10,12 @@
           <li
             class='px-6 transition duration-300 opacity-75 hover:opacity-100'
           >
-            <router-link to='/'>home</router-link>
+            <router-link to='/'>Home</router-link>
           </li>
           <li
             class='px-6 transition duration-300 opacity-75 hover:opacity-100'
           >
-            <router-link to='/article/1'>Articles</router-link>
+            <router-link to='/article/1'>Tag</router-link>
           </li>
           <li
             class='px-6 transition duration-300 opacity-75 hover:opacity-100'

@@ -16,6 +16,6 @@ export default {
 </script>
 <style>
 .text-default {
-  color: #06F108;
+  color: #fff;
 }
 </style>
