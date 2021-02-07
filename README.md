@@ -2,6 +2,8 @@
 
 ## Build Setup
 
+![github pages](https://github.com/kazuki-komori/kazuyan-blog/workflows/github%20pages/badge.svg)
+
 ```bash
 # install dependencies
 $ yarn install

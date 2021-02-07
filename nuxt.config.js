@@ -1,11 +1,44 @@
 export default {
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: 'kazuyan-blog',
+    htmlAttrs: {
+      lang: "ja",
+    },
+    title: "Profill | バーチャル名刺を作成しよう",
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' }
+      { hid: 'description', name: 'description', content: 'かずやんの tech blog' },
+      { hid: "og:type", property: "og:type", content: "website" },
+      {
+        hid: "og:site_name",
+        property: "og:site_name",
+        content: "かずやん | tech blog",
+      },
+      {
+        hid: "og:url",
+        property: "og:url",
+        content: "https://kazuki-komori.github.io/kazuyan-blog/",
+      },
+      {
+        hid: "og:title",
+        property: "og:site_name",
+        content: "かずやん | tech blog",
+      },
+      {
+        hid: "og:description",
+        property: "og:description",
+        content: "かずやんの tech blog",
+      },
+      {
+        hid: "og:image",
+        property: "og:image",
+        content: "https://kazuki-komori.github.io/kazuyan-blog/ogp/ogp.png",
+      },
+      {
+        name: "twitter:card",
+        content: "summary_large_image",
+      },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
