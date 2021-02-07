@@ -4,7 +4,7 @@ export default {
     htmlAttrs: {
       lang: "ja",
     },
-    title: "かずやん| tech blog",
+    title: "かずやん | tech blog",
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
