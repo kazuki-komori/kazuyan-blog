@@ -22,7 +22,7 @@ export default {
       },
       {
         hid: "og:title",
-        property: "og:site_name",
+        property: "og:title",
         content: "かずやん | tech blog",
       },
       {
