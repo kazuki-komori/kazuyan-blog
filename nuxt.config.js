@@ -43,6 +43,7 @@ export default {
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
+    '@nuxtjs/moment',
     '@nuxtjs/tailwindcss',
     '@nuxt/typescript-build'
   ],
@@ -67,5 +68,9 @@ export default {
         theme: 'prism-themes/themes/prism-darcula.css',
       }
     }
+  },
+  moment: {
+    locales: ['ja'],
+    defaultTimezone: 'Asia/Tokyo'
   }
 }

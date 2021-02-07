@@ -4,14 +4,16 @@
     <AppContainer>
       <Nuxt />
     </AppContainer>
+    <AppFooter/>
   </div>
 </template>
 
 <script>
 import AppContainer from '../components/layout/AppContainer'
 import AppHeader from '../components/layout/AppHeader'
+import AppFooter from '../components/layout/AppFooter'
 export default {
-  components: { AppHeader, AppContainer }
+  components: { AppFooter, AppHeader, AppContainer }
 }
 </script>
 <style>

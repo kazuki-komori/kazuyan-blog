@@ -1,7 +1,7 @@
 <template>
-  <section class='my-10 p-6 grid grid-cols-9'>
-    <span class='col-span-2 text-xl tracking-wider'>{{dateTime(article.createdAt)}}</span>
-    <section class='col-span-7'>
+  <section class='my-10 p-6 grid sm:grid-cols-9'>
+    <span class='col-span-2 text-xl tracking-wider pb-2'>{{dateTime(article.createdAt)}}</span>
+    <section class='sm:col-span-7'>
       <section class='flex'>
         <span class='flex pr-4'>
           <span class="material-icons px-1">
@@ -13,7 +13,7 @@
       </section>
       <router-link :to='`article/${article.title}`'>
         <span class='block grid-cols-5 mb-10'>
-          <h2 class='text-4xl font-medium hover:text-green'>
+          <h2 class='sm:text-4xl text-3xl font-medium hover:text-green'>
             {{ article.title }}
           </h2>
         </span>
