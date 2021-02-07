@@ -150,6 +150,9 @@ export default {
 .nuxt-content p {
   font-size: 1.2rem;
 }
+.nuxt-content .nuxt-content-highlight {
+  position: relative;
+}
 .nuxt-content .filename {
   position: absolute;
   padding-top: 0.5rem;
