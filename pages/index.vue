@@ -10,10 +10,15 @@
 import ArticleCard from '../components/ui/ArticleCard'
 export default {
   components: { ArticleCard },
-  async asyncData({ $content }) {
+  async asyncData({ $content, query }) {
+    const tag = query.tag
+    if (tag) {
+      const articles = await $content("blog").where({tags: {$contains: tag}}).fetch()
+      return {
+        articles
+      }
+    }
     const articles = await $content("blog").fetch()
-    console.log(articles)
-    console.log()
     return {
       articles
     }

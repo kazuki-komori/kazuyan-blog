@@ -9,10 +9,22 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons' }
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons' },
+      {
+        rel: 'stylesheet',
+        href: 'https://cdn.jsdelivr.net/npm/prismjs@1.20.0/themes/prism-tomorrow.css',
+      },
     ]
   },
+  hooks: {
+    'content:file:beforeInsert': (document) => {
+      if (document.extension === '.md') {
+        const { minutes } = require('reading-time')(document.text)
 
+        document.readingTime = minutes
+      }
+    }
+  },
   router: {
     base: '/kazuyan-blog/'
   },
@@ -47,5 +59,13 @@ export default {
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
+  },
+  content: {
+    markdown: {
+      remarkPlugins: ["remark-autolink-headings"],
+      prism: {
+        theme: 'prism-themes/themes/prism-darcula.css',
+      }
+    }
   }
 }

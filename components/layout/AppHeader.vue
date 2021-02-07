@@ -15,7 +15,12 @@
           <li
             class='px-6 transition duration-300 opacity-75 hover:opacity-100'
           >
-            <router-link to='/article/1'>Tag</router-link>
+            <router-link to='/tags'>Tags</router-link>
+          </li>
+          <li
+            class='px-6 transition duration-300 opacity-75 hover:opacity-100'
+          >
+            <a href='https://kazuyan-cui.vercel.app/' target='_blank'>portfolio</a>
           </li>
           <li
             class='px-6 transition duration-300 opacity-75 hover:opacity-100'
@@ -32,9 +37,12 @@ export default {
   data() {
     return {
       time: new Date(),
-      nav: {
-        type: 'home'
-      }
+      nav: [
+        {
+          title: 'home',
+          link: '/'
+        }
+      ]
     }
   },
   computed: {

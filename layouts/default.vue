@@ -1,5 +1,5 @@
 <template>
-  <div class='bg-gray-900 text-default'>
+  <div class='bg-gray-800 text-default'>
     <AppHeader/>
     <AppContainer>
       <Nuxt />

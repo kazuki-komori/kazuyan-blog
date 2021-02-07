@@ -3,8 +3,8 @@
     <span class="material-icons">
       label
     </span>
-    <section v-for='(tag, idx) in tags' class='text-lg px-2 tracking-wide hover:text-green' :key='idx'>
-      <router-link to='#'># {{tag}}</router-link>
+    <section v-for='(tag, idx) in tags' class='cursor-pointer text-lg px-2 tracking-wide hover:text-green' :key='idx'>
+      <p @click='tagIndex(tag)'># {{tag}}</p>
     </section>
   </section>
 </template>
@@ -14,6 +14,11 @@ export default {
     tags: {
       type: Array,
       required: true
+    }
+  },
+  methods: {
+    tagIndex(tag) {
+      this.$router.push({path: "/", query: {tag}})
     }
   }
 }

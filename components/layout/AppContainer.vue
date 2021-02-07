@@ -1,12 +1,12 @@
 <template>
-  <div class="container mx-auto">
+  <div class="container mx-auto px-10">
     <slot />
   </div>
 </template>
 
 <style scoped>
 .container {
-  max-width: 1024px;
-  height: 100vh;
+  max-width: 1200px;
+  min-height: 100vh;
 }
 </style>
