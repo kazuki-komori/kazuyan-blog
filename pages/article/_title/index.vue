@@ -66,6 +66,22 @@
 <script>
 import blogMixin from "@/mixins/_blog"
 export default {
+  head() {
+    return {
+      meta: [
+        {
+          hid: 'og:url',
+          property: 'og:url',
+          content: `https://kazuki-komori.github.io/kazuyan-blog/article/${this.page.title}`
+        },
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          content: `https://res.cloudinary.com/dru1maoes/image/upload/l_text:Sawarabi%20Gothic_50_bold:${this.page.title},co_rgb:5D6D7E,w_750,g_west,x_300,c_fit/v1613210395/OGP_jafx58.png`
+        },
+      ]
+    }
+  },
   mixins: [blogMixin],
   data() {
     return {
