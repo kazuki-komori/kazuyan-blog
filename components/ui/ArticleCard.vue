@@ -1,6 +1,6 @@
 <template>
-  <section class='my-10 p-6 grid sm:grid-cols-9'>
-    <span class='col-span-2 text-xl tracking-wider pb-2'>{{dateTime(article.createdAt)}}</span>
+  <section class='py-10 p-6 grid sm:grid-cols-9'>
+    <span class='col-span-2 text-xl tracking-wider pb-2'>{{dateTime(article.updatedAt)}}</span>
     <section class='sm:col-span-7'>
       <section class='flex'>
         <span class='flex pr-4'>
@@ -12,7 +12,7 @@
         <AppLabel :tags='article.tags'/>
       </section>
       <router-link :to='`article/${article.title}`'>
-        <span class='block grid-cols-5 mb-10'>
+        <span class='block grid-cols-5 lg:mb-10 mb-4'>
           <h2 class='sm:text-4xl text-3xl font-medium hover:text-green'>
             {{ article.title }}
           </h2>

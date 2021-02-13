@@ -1,14 +1,14 @@
 <template>
   <article v-if='page'>
-    <div class='py-10'>
-      <h1 class='lg:text-5xl text-3xl text-center'>{{ page.title }}</h1>
-      <div class='pb-16'>
+    <div class='lg:pb-10'>
+      <div class='py-4 lg:py-8'>
+        <h1 class='lg:text-5xl text-3xl text-center'>{{ page.title }}</h1>
         <section class='flex justify-center items-center pt-3'>
           <span class='flex px-2'>
             <span class="material-icons px-1">
               cached
             </span>
-            {{ dateTime(page.createdAt) }}
+            {{ dateTime(page.updatedAt) }}
           </span>
           <span class='flex px-2'>
             <span class="material-icons px-1">
@@ -24,7 +24,7 @@
       <section class='lg:grid lg:grid-cols-9 lg:gap-8'>
         <div class='col-span-7'>
           <AppCard>
-            <div class='prose lg:prose-lg max-w-none px-10'>
+            <div class='prose lg:prose-lg max-w-none px-4 lg:px-10'>
               <nuxt-content :document="page" />
             </div>
           </AppCard>
@@ -32,7 +32,7 @@
         <div class='col-span-2'>
           <div class='sticky p-index__card'>
             <AppCard>
-              <div class='py-8 px-4'>
+              <div class='lg:py-8 px-4'>
                 <img class='rounded-full mx-auto w-24 h-24' src='@/assets/img/kazuyan.jpg' alt='kazuyanのアイコン'>
                 <section class='py-4'>
                   <p class='text-center text-xl font-medium pb-2'>かずやん</p>
@@ -40,7 +40,7 @@
                     <span class='font-bold text-vueGreen'>Vue</span> を愛する
                     <br/>フロントエンドエンジニア
                   </p>
-                  <p class='text-center'>Vue/React/Python/Go</p>
+                  <p class='text-center text-sm'>Vue/React/Svelte/Python/Go</p>
                   <a target='_blank' href='https://twitter.com/D_kazuyan'>
                     <section class='flex py-4'>
                         <img class='rounded rounded-full h-8 w-8 mr-4' src='@/assets/img/twitter-icon.png' alt=''>

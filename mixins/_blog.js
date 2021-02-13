@@ -3,7 +3,7 @@ export default {
     dateTime() {
       return (time) => {
         const day = new Date(time)
-        return `${day.getFullYear()}/${day.getMonth() + 1}/${day.getDate()}`
+        return `${day.getFullYear()}.${day.getMonth() + 1}.${day.getDate()}`
       }
     },
     readTime() {

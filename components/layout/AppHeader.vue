@@ -4,7 +4,7 @@
       <p class='md:text-xl text-sm pb-2'>{{timer}}</p>
     </section>
     <nav>
-      <h2 class='text-center sm:text-4xl text-3xl font-bold'>かずやん ブログ</h2>
+      <h2 class='text-center sm:text-4xl text-3xl font-bold'>かずやん Tech Blog</h2>
       <div>
         <ul class='grid grid-cols-6 pt-8 sm:grid-cols-8 text-center text-lg'>
           <li class='block col-span-3 sm:col-span-2'>
