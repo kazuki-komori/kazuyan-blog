@@ -69,6 +69,8 @@ export default {
   head() {
     return {
       meta: [
+        { hid: 'twitter:card', name: 'twitter:card', content: 'summary_large_image'},
+        { hid: 'og:type', property: 'og:type', content: 'blog' },
         {
           hid: 'og:url',
           property: 'og:url',
