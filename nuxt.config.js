@@ -39,6 +39,10 @@ export default {
         name: "twitter:card",
         content: "summary_large_image",
       },
+      {
+        name: "google-site-verification",
+        content: "BWwpNFmeKTtCoMLY018CcER3TQoa_Gz7ffkb0_Zaf0o"
+      }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/kazuyan-blog/favicon.ico' },
