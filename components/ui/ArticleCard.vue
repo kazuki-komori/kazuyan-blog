@@ -13,12 +13,12 @@
       </section>
       <router-link :to='`article/${article.title}`'>
         <span class='block grid-cols-5 lg:mb-10 mb-4'>
-          <h2 class='sm:text-4xl text-3xl font-medium hover:text-green'>
+          <h2 class='sm:text-4xl text-2xl font-medium hover:text-green'>
             {{ article.title }}
           </h2>
         </span>
       </router-link>
-      <p class='text-xl tracking-wider'>{{ article.description }}</p>
+      <p class='text-lg tracking-wider'>{{ article.description }}</p>
     </section>
   </section>
 </template>

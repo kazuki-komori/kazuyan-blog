@@ -1,8 +1,8 @@
 <template>
   <article v-if='page'>
     <div class='lg:pb-10'>
-      <div class='py-4 lg:py-8'>
-        <h1 class='lg:text-5xl text-3xl text-center'>{{ page.title }}</h1>
+      <div class='py-6 lg:py-8'>
+        <h1 class='lg:text-5xl text-2xl text-center'>{{ page.title }}</h1>
         <section class='flex justify-center items-center pt-3'>
           <span class='flex px-2'>
             <span class="material-icons px-1">
@@ -40,7 +40,7 @@
                     <span class='font-bold text-vueGreen'>Vue</span> を愛する
                     <br/>フロントエンドエンジニア
                   </p>
-                  <p class='text-center text-sm'>Vue/React/Svelte/Python/Go</p>
+                  <p class='text-center text-sm'>Vue/React/Python/Go</p>
                   <a target='_blank' href='https://twitter.com/D_kazuyan'>
                     <section class='flex py-4'>
                         <img class='rounded rounded-full h-8 w-8 mr-4' src='@/assets/img/twitter-icon.png' alt=''>

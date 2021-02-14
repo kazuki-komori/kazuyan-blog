@@ -103,7 +103,7 @@ export default {
   },
   content: {
     markdown: {
-      remarkPlugins: ["remark-autolink-headings"],
+      remarkPlugins: ["remark-autolink-headings", "remark-emoji"],
       prism: {
         theme: 'prism-themes/themes/prism-darcula.css',
       }
