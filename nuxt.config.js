@@ -86,11 +86,13 @@ export default {
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     '@nuxt/content',
+    [
     '@nuxtjs/google-gtag',
-    {
-      id: process.env.GOOGLE_ANALYTICS_ID,
-      debug: true
-    }
+      {
+        id: process.env.GOOGLE_ANALYTICS_ID,
+        debug: true
+      }
+    ]
   ],
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
