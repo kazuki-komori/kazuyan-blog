@@ -79,14 +79,18 @@ export default {
     '@nuxtjs/moment',
     '@nuxtjs/tailwindcss',
     '@nuxt/typescript-build',
-    '@nuxtjs/google-analytics'
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
-    '@nuxt/content'
+    '@nuxt/content',
+    '@nuxtjs/google-gtag',
+    {
+      id: process.env.GOOGLE_ANALYTICS_ID,
+      debug: true
+    }
   ],
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
@@ -106,10 +110,5 @@ export default {
   moment: {
     locales: ['ja'],
     defaultTimezone: 'Asia/Tokyo'
-  },
-  publicRuntimeConfig: {
-    googleAnalytics: {
-      id: process.env.GOOGLE_ANALYTICS_ID
-    }
   },
 }
