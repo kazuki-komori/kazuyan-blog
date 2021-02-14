@@ -1,22 +1,24 @@
-# kazuyan-blog
+## kazuyan-blog
 
-## Build Setup
+## デプロイ先 (github pages)
 
 ![github pages](https://github.com/kazuki-komori/kazuyan-blog/workflows/github%20pages/badge.svg)
 
+## セットアップ
+
+### 依存関係のインストール
 ```bash
-# install dependencies
-$ yarn install
-
-# serve with hot reload at localhost:3000
-$ yarn dev
-
-# build for production and launch server
-$ yarn build
-$ yarn start
-
-# generate static project
-$ yarn generate
+npm install
 ```
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+### 開発用サーバーの起動
+```bash
+npm run dev
+```
+
+## 開発環境
+```
+Node: 12.x
+Nuxt.js: 2.14.x
+Nuxt-content: 1.11.1
+```
