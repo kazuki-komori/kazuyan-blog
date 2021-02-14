@@ -78,7 +78,8 @@ export default {
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/moment',
     '@nuxtjs/tailwindcss',
-    '@nuxt/typescript-build'
+    '@nuxt/typescript-build',
+    '@nuxtjs/google-analytics'
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
@@ -105,5 +106,10 @@ export default {
   moment: {
     locales: ['ja'],
     defaultTimezone: 'Asia/Tokyo'
-  }
+  },
+  publicRuntimeConfig: {
+    googleAnalytics: {
+      id: process.env.GOOGLE_ANALYTICS_ID
+    }
+  },
 }
