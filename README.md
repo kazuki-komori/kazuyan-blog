@@ -1,8 +1,10 @@
 ## kazuyan-blog
 
+![github pages](https://github.com/kazuki-komori/kazuyan-blog/workflows/github%20pages/badge.svg)
+
 ## デプロイ先 (github pages)
 
-![github pages](https://github.com/kazuki-komori/kazuyan-blog/workflows/github%20pages/badge.svg)
+https://kazuki-komori.github.io/kazuyan-blog/
 
 ## セットアップ
 
